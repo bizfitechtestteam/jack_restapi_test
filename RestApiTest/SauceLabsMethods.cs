@@ -139,6 +139,7 @@ namespace RestApiTest
             SauceScreenshots sauceScreenshots = SauceLabs_GetScreenshotAssets(jobsID);
             for (int i = 0; i < sauceScreenshots.screenshots.Count; i++)
             {
+                //TODO - simplify the namespaces - don't need fully qualified paths
                 System.IO.Directory.CreateDirectory(jobsID);
                 HttpWebRequest HttpWReq =
                     (HttpWebRequest)
